@@ -16,7 +16,7 @@
 
 pipeline {
   agent {
-      label "terraform-exec"
+      label any
   }
   stages {
     // [START tf-init, tf-validate]
