@@ -15,9 +15,8 @@
  */
 
 pipeline {
-  agent {
-      label any
-  }
+  agent any
+  
   stages {
     // [START tf-init, tf-validate]
     stage('TF init & validate') {
