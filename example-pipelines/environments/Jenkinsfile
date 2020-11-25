@@ -27,7 +27,7 @@ pipeline {
           if [[ $CHANGE_TARGET ]]; then
             TARGET_ENV=$CHANGE_TARGET
           else
-            TARGET_ENV=$BRANCH_NAME
+            TARGET_ENV=dev
           fi
 
           if [ -d "example-pipelines/environments/${TARGET_ENV}/" ]; then
